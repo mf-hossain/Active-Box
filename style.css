@@ -120,3 +120,98 @@ a{
     font-size: 14px;
     
 }
+
+/* --------gallery section---------- */
+
+.gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1px;
+    justify-content: space-between;
+}
+.gallery-item{
+    width: calc(25% - 1px);
+    min-height: 320px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.gallery-item-text{
+    z-index: 10;
+    font-family: 'Raleway', sans-serif;
+}
+.gallery-item-text h3{
+    text-align: center;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 14px;
+    color: transparent;
+}
+.gallery-item-text p{
+    text-align: center;
+    transition: 0.5s;
+    font-size: 14px;
+    color: transparent;
+}
+
+.gallery-item:hover .gallery-item-text h3{
+    color: #ffffff;
+}
+.gallery-item:hover .gallery-item-text p{
+    color: #ffffff;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.gallery-item:hover .overlay{
+    background-color: rgba( 232, 69, 69, 0.9);
+}
+.gallery-item-1{
+    background-image: url(./images/works1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item-2{
+    background-image: url(./images/works2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item-3{
+    background-image: url(./images/works3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item-4{
+    background-image: url(./images/works4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item-5{
+    background-image: url(./images/works5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item-6{
+    background-image: url(./images/works6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item-7{
+    background-image: url(./images/works7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item-8{
+    background-image: url(./images/works8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
